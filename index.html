@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <h2 align="center" onClick="window.location.href=window.location.href">Tic-Tac-Toe</h2>
+  <div id="selection">Choose your mark: <input type="radio" name="mark" value="cross" id="player"> <i class='fa fa-times' aria-hidden='true'></i>
+  <input type="radio" name="mark" value="nought" checked="checked"> <i class='fa fa-circle-o' aria-hidden='true'></i>
+</div><br>
+  <div class="display"><i class='fa fa-times' aria-hidden='true'></i> turn</div><br>
+  <div class="board">
+    <div class="button" id="b0">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" id="b1">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" id="b2">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" id="b3">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" Id="b4">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" id="b5">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" id="b6">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" id="b7">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div class="button" id="b8">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front"></div>
+          <div class="back"></div>					
+        </div>
+      </div>
+    </div>
+    <div id="cross"><div class="button">0</div><div class="result"><i class='fa fa-times' aria-hidden='true'></i></div></div>
+    <div id="nought"><div class="button">0</div><div class="result"><i class='fa fa-circle-o' aria-hidden='true'></i></div></div>
+    </div>
+ </div>
+    <div id="footer">Site developed by <a href="https://fi.linkedin.com/in/sami-kangas" target="_blank">Sami Kangas 2017</a> with <i class="fa fa-lg fa-music"></i> and <i class="fa fa-lg fa-heart"></i>
+			</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

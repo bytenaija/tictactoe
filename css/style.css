@@ -1,0 +1,154 @@
+body{
+  /*background-color: lightblue;
+  background-image: url("https://raw.githubusercontent.com/zumartic/tictactoe/master/bg_tictactoe.jpg");*/
+  font-size: 150%;
+  background: lightblue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, lightblue, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, lightblue, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, lightblue, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, lightblue, blue); /* Standard syntax */
+  background-size: 1900px 1200px;
+  background-repeat: no-repeat;
+  color: white;
+  cursor: context-menu;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+.container {
+   text-align: center;
+}
+
+.board{
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 300px;
+}
+
+.result{
+  position: relative;
+  /*margin: auto;*/
+  width: 300px;
+}
+
+.button {
+    font-size: 60px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;  
+    border: 1px solid grey;
+    /*padding: 0px;
+    margin: 0px;*/
+    margin-left: 0px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+#b0, #b1, #b2{
+  top: 0px;
+}
+
+#b3, #b4, #b5{
+  top: 100px;
+}
+
+#b6, #b7, #b8{
+  top: 200px;
+}
+
+#b1, #b4, #b7{
+  left: 100px;
+}
+
+#b2, #b5, #b8{
+  left: 200px;
+}
+
+#nought{
+  position: relative;
+  left: 150px;
+  top: 300px;
+}
+
+#cross{
+  position: relative;
+  left: 50px;
+  top: 300px;
+}
+
+.result{
+  position: absolute;
+  left: -108px;
+  top: 100px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	-webkit-align-content: center;
+    align-content: center;
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+/*.flip-container:hover .flipper, .flip-container.hover .flipper,*/ 
+.flip-container.flip .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 80px;
+	height: 80px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+#footer {
+   position:relative; 
+   margin-top:100px;
+   /*bottom:0px; */
+   font-size: 80%;
+   height:60px; 
+   /*left:0px; 
+   right:0px; */
+   overflow:hidden;
+   text-align:center;  
+   
+}
+
+#footer .fa:hover{
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  color: red;
+}
